@@ -1,0 +1,9 @@
+[project]
+name = "advanced-scraper"
+version = "0.1.0"
+description = "Dependency-free ethical web scraper with robots.txt, throttling, retries, extraction, and exports."
+requires-python = ">=3.11"
+
+[project.scripts]
+advanced-scraper = "advanced_scraper.cli:main"
+

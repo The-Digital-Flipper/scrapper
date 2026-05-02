@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Advanced Scraper
+Comment=Local reusable website scraper dashboard
+Exec=/home/007-JB/advanced-scraper/advanced-scraper-app.sh
+Icon=/home/007-JB/.local/share/icons/advanced-scraper-icon.svg
+Terminal=false
+Categories=Development;Utility;
+StartupNotify=true
