@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: advanced-scraper
+Version: 0.1.0
+Summary: Dependency-free ethical web scraper with robots.txt, throttling, retries, extraction, and exports.
+Requires-Python: >=3.11

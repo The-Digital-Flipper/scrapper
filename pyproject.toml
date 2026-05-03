@@ -4,6 +4,8 @@ version = "0.1.0"
 description = "Dependency-free ethical web scraper with robots.txt, throttling, retries, extraction, and exports."
 requires-python = ">=3.11"
 
+[tool.setuptools]
+packages = ["advanced_scraper"]
+
 [project.scripts]
 advanced-scraper = "advanced_scraper.cli:main"
-
