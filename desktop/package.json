@@ -14,8 +14,8 @@
     "dist:mac": "electron-builder --mac"
   },
   "devDependencies": {
-    "electron": "^30.0.0",
-    "electron-builder": "^24.13.3"
+    "electron": "^41.5.0",
+    "electron-builder": "^26.8.1"
   },
     "build": {
     "appId": "com.007JB.advancedscraper",
