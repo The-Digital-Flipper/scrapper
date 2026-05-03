@@ -1,0 +1,73 @@
+{
+  "name": "advanced-scraper-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "description": "Desktop shell for the Advanced Scraper dashboard",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist:linux": "electron-builder --linux",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+    "build": {
+    "appId": "com.007JB.advancedscraper",
+    "productName": "Advanced Scraper",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../backend-dist",
+        "to": "backend-dist"
+      },
+      {
+        "from": "../advanced_scraper",
+        "to": "appdata/advanced_scraper"
+      },
+      {
+        "from": "../advanced-scraper-icon.svg",
+        "to": "appdata/advanced-scraper-icon.svg"
+      },
+      {
+        "from": "../advanced-scraper-app.sh",
+        "to": "appdata/advanced-scraper-app.sh"
+      },
+      {
+        "from": "../install-local.sh",
+        "to": "appdata/install-local.sh"
+      }
+    ],
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Development"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    }
+  }
+}
