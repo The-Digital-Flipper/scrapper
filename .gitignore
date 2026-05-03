@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 
+# Node/electron
+desktop/node_modules/
+desktop/release/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # Local runs
 .scraper-state.json
 scraper-events.jsonl
