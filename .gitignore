@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Local runs
+.scraper-state.json
+scraper-events.jsonl
+
+# OS/editor
+.DS_Store

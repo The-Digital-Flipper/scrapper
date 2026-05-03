@@ -7,3 +7,5 @@ requires-python = ">=3.11"
 [project.scripts]
 advanced-scraper = "advanced_scraper.cli:main"
 
+[tool.setuptools]
+packages = ["advanced_scraper"]
